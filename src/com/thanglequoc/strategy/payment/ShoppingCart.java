@@ -1,4 +1,4 @@
-package com.thanglequoc.strategypattern.payment;
+package com.thanglequoc.strategy.payment;
 
 public class ShoppingCart {
 	private int totalAmount;

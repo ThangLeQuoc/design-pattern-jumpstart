@@ -1,4 +1,4 @@
-package com.thanglequoc.strategypattern.payment;
+package com.thanglequoc.strategy.payment;
 
 import com.thanglequoc.program.DesignPatternProgramShowcase;
 import com.thanglequoc.program.DesignPatternType;
