@@ -1,4 +1,4 @@
-package com.thanglequoc.strategypattern;
+package com.thanglequoc.strategy.ducksimulator;
 
 public class MuteQuack implements QuackBehavior {
 
