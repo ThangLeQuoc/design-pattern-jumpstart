@@ -3,7 +3,7 @@ package com.thanglequoc.program;
 import java.util.ArrayList;
 import java.util.List;
 
-import com.thanglequoc.strategypattern.payment.ShoppingCartShowcase;
+import com.thanglequoc.strategy.payment.ShoppingCartShowcase;
 
 public class Program {
 	public static void main(String[] args) {

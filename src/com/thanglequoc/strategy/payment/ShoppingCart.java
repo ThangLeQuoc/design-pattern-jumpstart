@@ -1,4 +1,4 @@
-package com.thanglequoc.strategypattern.payment;
+package com.thanglequoc.strategy.payment;
 
 public class ShoppingCart {
 	private int totalAmount;
@@ -20,5 +20,4 @@ public class ShoppingCart {
 	public void checkout() throws PaymentException {
 		paymentStrategy.pay(totalAmount);
 	}
-	
 }
