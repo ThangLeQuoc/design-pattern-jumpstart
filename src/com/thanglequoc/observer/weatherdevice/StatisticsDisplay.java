@@ -1,5 +1,7 @@
 package com.thanglequoc.observer.weatherdevice;
 
+import com.thanglequoc.observer.java.weatherdevice.DisplayElement;
+
 public class StatisticsDisplay implements Observer, DisplayElement {
 
     @Override
@@ -13,5 +15,11 @@ public class StatisticsDisplay implements Observer, DisplayElement {
 	System.out.println("Statistics Display");
 	
     }
+
+	@Override
+	public void registerWeatherDataSource(Observable weatherDataSource) {
+		// TODO Auto-generated method stub
+		
+	}
 
 }

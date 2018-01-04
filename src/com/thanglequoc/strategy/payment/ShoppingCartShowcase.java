@@ -67,5 +67,4 @@ public class ShoppingCartShowcase implements DesignPatternProgramShowcase {
 			System.out.println("My payment strategy was: "+myPaymentStrategy.getPaymentType());
 		}
 	}
-	
 }

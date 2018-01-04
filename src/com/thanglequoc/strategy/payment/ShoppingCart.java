@@ -20,5 +20,4 @@ public class ShoppingCart {
 	public void checkout() throws PaymentException {
 		paymentStrategy.pay(totalAmount);
 	}
-	
 }
