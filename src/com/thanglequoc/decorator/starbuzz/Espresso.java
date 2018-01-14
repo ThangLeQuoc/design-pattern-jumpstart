@@ -12,7 +12,7 @@ public class Espresso extends Beverage {
     
     @Override
     public String getDescription() {
-	return getSize() + " Espresso";
+	return getSize().getLiteral() + " Espresso";
     }
     @Override
     public double cost() {

@@ -4,10 +4,13 @@ public class SteamedMilk extends CondimentDecorator {
     
     private Beverage beverage;
     
-    private static double STEAMED_MILK_PRICE = 0.1;
+    private static double SMALL_STEAMED_MILK_PRICE = 0.1;
+    private static double MEDIUM_STEAMED_MILK_PRICE = 0.2;
+    private static double LARGE_STEAMED_MILK_PRICE = 0.3;
     
     public SteamedMilk(Beverage beverage){
 	this.beverage = beverage;
+	autoAdaptCondimentSize(beverage);
     }
     
     @Override
@@ -16,7 +19,13 @@ public class SteamedMilk extends CondimentDecorator {
     }
     @Override
     public double cost() {
-	return beverage.cost() + STEAMED_MILK_PRICE;
+	if(isSmallSize()){
+	    return beverage.cost() + SMALL_STEAMED_MILK_PRICE;
+	} else if(isMediumSize()){
+	    return beverage.cost() + MEDIUM_STEAMED_MILK_PRICE;
+	} else {
+	    return beverage.cost() + LARGE_STEAMED_MILK_PRICE;
+	}
     }
     
 }
